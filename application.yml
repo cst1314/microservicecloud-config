@@ -1,13 +1,14 @@
 spring:
-  profiles:
-    active: dev
+  profiles:
+     active:
+      -dev
+---
+spring: 
+  profiles: dev
+  application:
+    name: microservicecloud-dev
 ---
 spring:
-  profiles: dev
-  application:     #开发环境
-    name: microservicecloud-config-zjx-dev
----
-spring:
-  profiles: test   #测试环境
-  application:
-    name: microservicecloud-config-zjx-test
+  profiles: test
+  application:
+    name:microservicecloud-test
